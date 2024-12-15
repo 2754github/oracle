@@ -16,4 +16,7 @@ test: lint
 	go clean -testcache
 	go test -v ./...
 
-.PHONY: init tidy format lint test
+run:
+	go run main.go
+
+.PHONY: init tidy format lint test run
